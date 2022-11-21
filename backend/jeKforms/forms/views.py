@@ -3,10 +3,10 @@ from django.shortcuts import render
 #usar só enquanto não temos mais nada
 #from django.http import HttpResponse
 
-from .models import Post
+from .models import Forms_Bio
 
 def home_page(request):
     context = {
-        'posts': Post.objects.all()
+        'forms': Forms_Bio.objects.all()
     } 
     return render(request, 'forms/home.html', context)
