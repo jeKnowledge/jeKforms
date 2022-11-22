@@ -1,0 +1,12 @@
+{% extends "forms/base.html" %}
+
+{% block content %}
+    <h1>jeKforms Home Page with all Forms</h1>
+
+    {% for form in forms %}
+    <h1>{{ form.forms_name }}</h1>
+    <p>Por {{form.forms_admin}} até {{form.date_limit}}</p>
+    <p>Link: {{form.forms_url}}</p>
+    {% endfor %}
+    
+{% endblock content %}
