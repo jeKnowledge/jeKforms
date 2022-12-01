@@ -11,7 +11,7 @@ class Forms_Bio(models.Model):
     # Pus boolean porque so há dois tipos, se forem precisos mais temos que mudar
     externo = models.BooleanField()
     # Não sei se é melhor ou assim ou a comparar as datas - perguntar na reunião
-    #closed = models.BooleanField()
+    closed = models.BooleanField()
 
     def __str__(self):
         return self.forms_name

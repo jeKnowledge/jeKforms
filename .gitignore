@@ -16,3 +16,6 @@ ehthumbs.db
 Icon
 Thumbs.db
 *~
+
+*.migrations/
++.__pycache__/
