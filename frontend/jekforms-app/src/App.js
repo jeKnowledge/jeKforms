@@ -1,5 +1,6 @@
 import './App.css';
 
+import Links from './Links';
 import Forms from './Forms';
 import React from 'react';
 import { GoogleLogin } from 'react-google-login';
@@ -25,10 +26,11 @@ function App() {
         />
       </div>
       <div className='buttons'>
+        <Links forms_name={"Recrutamento"} forms_url={"https://docs.google.com/forms/u/0/?tgif=d"}></Links>
+        <Links forms_name={"jeKacademy"} forms_url={"https://docs.google.com/forms/u/0/?tgif=d"}></Links>
+
         <Forms text="Recrutamento"></Forms>
         <Forms text="jeKacademy"></Forms>
-        <Forms text="Pizza Night"></Forms>
-        <Forms text="Tech"></Forms>
       </div>
     </div> 
   );

@@ -22,6 +22,21 @@
   padding-top: 30.6875em;
 }
 
+.ligacoes {
+  text-align: center;
+  padding-top: 0.125em;
+  padding-bottom: 0.1875em;
+  margin: 1em;
+  color: white;
+  background-color: #1690C3;
+  width: 43em;
+  height: 3.1875em;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 2em;
+  text-decoration: none; 
+}
+
 .btn {
   padding-top: 0.125em;
   padding-bottom: 0.1875em;
