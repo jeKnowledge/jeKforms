@@ -4,10 +4,31 @@ import Links from './Links';
 import React from 'react';
 import { GoogleLogin } from 'react-google-login';
 import ReactDOM from 'react-dom';
+import { useEffect } from 'react';
 
 //const clientId = "926589748534-haun8k580htm3scicreql3a1gsh3f2ta.apps.googleusercontent.com";
 
 function App() {
+
+  function handleCallbackResponse(response) {
+    console.log(response)
+    const token = response.credential
+    axios.post("")
+  }
+  
+  useEffect(() => {
+    /* global google */
+    google.accounts.id.initialize({
+      client_id: "926589748534-haun8k580htm3scicreql3a1gsh3f2ta.apps.googleusercontent.com",
+      callback: handleCallbackResponse
+    })
+
+    google.accounts.id.renderButton(
+      document.getElementById("signInDiv"),
+      { theme: "outline", size: "large", shape: "circle", logo_alignment: "center" },
+    )
+  }, [])// eslint-disable-line react-hooks/exhaustive-deps
+
 
   const responseGoogle = (response) => {
     console.log(response);
@@ -17,7 +38,9 @@ function App() {
     <div>
       <div className='header'>
         <div className='header-login'>
-          <GoogleLogin
+         <div className='signIn' id="signInDiv"></div>
+          {/*
+            <GoogleLogin
             clientId="926589748534-haun8k580htm3scicreql3a1gsh3f2ta.apps.googleusercontent.com"
             render={renderProps => (
               <button className='login-button' onClick={renderProps.onClick} disabled={renderProps.disabled}>Login</button>
@@ -26,7 +49,7 @@ function App() {
             onSuccess={responseGoogle}
             onFailure={responseGoogle}
             cookiePolicy={'single_host_origin'}
-          />
+            /> */}
         </div>
       </div>
       <div className='jeKlogo'>

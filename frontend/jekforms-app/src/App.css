@@ -5,8 +5,8 @@
 .header-login {
   display: flex;
   justify-content: flex-end;
-  padding-top: 4.0625em;
-  padding-right: 2.5em;
+  padding-top: 65px;
+  padding-right: 40px;
 }
 
 .login-button {
@@ -22,13 +22,13 @@
 .jeKlogo {
   display: flex;
   justify-content: center;
-  margin-top: 7.3125em;
+  margin-top: 117px;
 }
 
 .text {
   display: flex;
   justify-content: center;
-  margin-top: 1.125em;
+  margin-top: 18px;
 }
 /*
 .App {
@@ -42,20 +42,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5.5em;
+  margin-top: 88px;
 }
 
 .ligacoes {
   color: white;
   background-color: #1690C3;
-  padding-top: 0.5625em;
-  padding-bottom: 0.875em;
-  margin: 1em;
-  width: 26.4375em;
-  height: 3.004375em;
+  padding-top: 9px;
+  padding-bottom: 14.07px;
+  margin: 8.965px;
+  width: 423px;
+  height: 48.07px;
   text-align: center;
   border: none;
   font-size: 24px;
-  border-radius: 0.625em;
+  border-radius: 9px;
   text-decoration: none; 
 }
