@@ -1,7 +1,6 @@
 import './App.css';
 
 import Links from './Links';
-import Forms from './Forms';
 import React from 'react';
 import { GoogleLogin } from 'react-google-login';
 import ReactDOM from 'react-dom';
@@ -15,22 +14,32 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div className="Google-login-button">
-        <GoogleLogin
-          clientId="926589748534-haun8k580htm3scicreql3a1gsh3f2ta.apps.googleusercontent.com"
-          buttonText="Login"
-          onSuccess={responseGoogle}
-          onFailure={responseGoogle}
-          cookiePolicy={'single_host_origin'}
-        />
+    <div>
+      <div className='header'>
+        <div className='header-login'>
+          <GoogleLogin
+            clientId="926589748534-haun8k580htm3scicreql3a1gsh3f2ta.apps.googleusercontent.com"
+            render={renderProps => (
+              <button className='login-button' onClick={renderProps.onClick} disabled={renderProps.disabled}>Login</button>
+            )}
+            buttonText="Login"
+            onSuccess={responseGoogle}
+            onFailure={responseGoogle}
+            cookiePolicy={'single_host_origin'}
+          />
+        </div>
+      </div>
+      <div className='jeKlogo'>
+        <img src="icon.svg" width={216} height={218}/>
+      </div>
+      <div className='text'>
+        jeKForms
       </div>
       <div className='buttons'>
         <Links forms_name={"Recrutamento"} forms_url={"https://docs.google.com/forms/u/0/?tgif=d"}></Links>
         <Links forms_name={"jeKacademy"} forms_url={"https://docs.google.com/forms/u/0/?tgif=d"}></Links>
-
-        <Forms text="Recrutamento"></Forms>
-        <Forms text="jeKacademy"></Forms>
+        <Links forms_name={"Pizza night"} forms_url={"https://docs.google.com/forms/u/0/?tgif=d"}></Links>
+        <Links forms_name={"Tech"} forms_url={"https://docs.google.com/forms/u/0/?tgif=d"}></Links>
       </div>
     </div> 
   );

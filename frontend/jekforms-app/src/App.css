@@ -1,51 +1,61 @@
-.Google-login-button {
-  color: white;
+.header {
+  top: 0;
+  width: 100%;
+}
+.header-login {
   display: flex;
-  justify-content: right;
-  align-items: right;
-  padding-top: 1.5em;
-  padding-right: 2.1875em;
+  justify-content: flex-end;
+  padding-top: 4.0625em;
+  padding-right: 2.5em;
 }
 
+.login-button {
+  background-color: #1690C3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 118px;
+  height: 42px;
+  font-size: 32px;
+}
+
+.jeKlogo {
+  display: flex;
+  justify-content: center;
+  margin-top: 7.3125em;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.125em;
+}
 /*
 .App {
   text-align: center;
 
-}*/
+}
+*/
 
 .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: auto;
-  padding-top: 30.6875em;
+  margin-top: 5.5em;
 }
 
 .ligacoes {
+  color: white;
+  background-color: #1690C3;
+  padding-top: 0.5625em;
+  padding-bottom: 0.875em;
+  margin: 1em;
+  width: 26.4375em;
+  height: 3.004375em;
   text-align: center;
-  padding-top: 0.125em;
-  padding-bottom: 0.1875em;
-  margin: 1em;
-  color: white;
-  background-color: #1690C3;
-  width: 43em;
-  height: 3.1875em;
   border: none;
+  font-size: 24px;
   border-radius: 0.625em;
-  font-size: 2em;
   text-decoration: none; 
-}
-
-.btn {
-  padding-top: 0.125em;
-  padding-bottom: 0.1875em;
-  margin: 1em;
-  color: white;
-  background-color: #1690C3;
-  width: 43em;
-  height: 3.1875em;
-  border: none;
-  border-radius: 0.625em;
-  font-size: 2em;
 }
