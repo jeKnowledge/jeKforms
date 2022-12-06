@@ -1,8 +1,6 @@
 .header-login {
   display: flex;
   justify-content: flex-end;
-  padding-right: 40px;
-  margin-top: 7.2vh;
 }
 
 .login-button {
@@ -10,10 +8,12 @@
   color: white;
   border: none;
   border-radius: 4px;
-  width: 118px;
-  height: 42px;
+  width: 8vw;
+  height: 5vh;
   font-size: 32px;
   margin-top: 7.2vh;
+  margin-right: 3vw;
+  text-align: center;
 }
 
 .jeKlogo {

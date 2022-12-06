@@ -1,9 +1,9 @@
 import React from 'react'
 import './App.css'
-
-const Links = ({forms_url, forms_name}) => {
+  
+const Links = ({form}) => {
   return (
-    <a className="ligacoes" href={forms_url} target="_blank">{forms_name} </a>
+    <a className="ligacoes" href={form.forms_url} target="_blank">{form.forms_name}</a>
   )
 }
 

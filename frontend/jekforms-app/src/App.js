@@ -14,7 +14,7 @@ function App() {
   const [forms, setForms] = useState([])
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/home/forms/`")
+    axios.get(`http://127.0.0.1:8000/home/forms/`)
     .then(res => {
       console.log(res);
       setForms(res.data);
@@ -25,12 +25,6 @@ function App() {
 
   }, [])
 
-  function handleCallbackResponse(response) {
-    console.log(response)
-    const token = response.credential
-    //axios.post("")
-  }
-  
   useEffect(() => {
     /* global google */
     google.accounts.id.initialize({
@@ -40,21 +34,29 @@ function App() {
 
     google.accounts.id.renderButton(
       document.getElementById("signInDiv"),
-      { theme: "outline", size: "large", shape: "circle", logo_alignment: "center" },
+      { width: "100px", height: "100px"},
     )
-  }, [])// eslint-disable-line react-hooks/exhaustive-deps
+  }, [])
+  
+  function handleCallbackResponse(response) {
+    console.log(response)
+    //aqui recebe o token do user
+    const token = response.credential
+    //mandar para back e ver se user já existe  
+    axios.post("")
+  }
+  
 
-
+  {/*
   const responseGoogle = (response) => {
     console.log(response);
-  }
+  }*/}
 
   return (
     <div>
-        <div className='header-login'>
-         <div className='signIn' id="signInDiv">
-         </div>
-          {/*
+      <div className='header-login'>
+        <div className='login-button' id="signInDiv">Login</div>
+         {/*
             <GoogleLogin
             clientId="926589748534-haun8k580htm3scicreql3a1gsh3f2ta.apps.googleusercontent.com"
             render={renderProps => (
@@ -64,7 +66,7 @@ function App() {
             onSuccess={responseGoogle}
             onFailure={responseGoogle}
             cookiePolicy={'single_host_origin'}
-            /> */}
+            />*/}
         </div>
       <div className='jeKlogo'>
         <img src="./icon.svg" alt="jeKlogo" width={216} height={218}/>
@@ -75,7 +77,7 @@ function App() {
       <div className='buttons'>
         {forms.map((form, index) =>
           <Links key={index} form={form} />
-        )}
+          )}
       </div>
     </div> 
   );
