@@ -55,6 +55,7 @@ function App() {
   return (
     <div>
       <div className='header-login'>
+        <div className='search-bar'>Pesquisar</div>
         <div className='login-button' id="signInDiv">Login</div>
          {/*
             <GoogleLogin
