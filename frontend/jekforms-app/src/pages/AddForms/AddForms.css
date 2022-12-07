@@ -1,0 +1,98 @@
+/*mexe com o tipo de letra e assim*/
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+/* create o botcrform form */
+.create {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.create label {
+    text-align: left;
+    display: block;
+}
+
+.create h2 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.create input,
+.create textarea,
+.create select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    background: rgba(22, 144, 195, 0.2);
+    border: 1px solid #1690C3;
+    border-radius: 7px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.create button {
+    background: #1690C3;
+    color: #fff;
+    border: 0;
+    width: 113px;
+    height: 40px;
+    left: 699px;
+    top: 704px;
+    padding: 8px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.topnav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border: 1px solid #1690C3;
+}
