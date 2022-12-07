@@ -32,9 +32,10 @@
 .criar-form {
     background-color: #1690C3;
     width: 20vh;
-    height: 2vw;
+    height: 5vw;
     text-align: center;
     align-items: center;
+    text-decoration: none;    
 }
 
 .jeKlogo {

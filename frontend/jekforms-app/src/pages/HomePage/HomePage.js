@@ -60,9 +60,9 @@ const HomePage = () => {
     </div>
     <div className="text">jeKForms</div>
     <div>
-        <li className="criar-form">
-            <Link to="/AddForms">Criar Formulário</Link>
-        </li>
+        <div className="criar-form">
+            <Link to="/AddForms" target="_blank">Criar Formulário</Link>
+        </div>
     </div>
     <div className="buttons">
       {forms.map((form, index) => (
